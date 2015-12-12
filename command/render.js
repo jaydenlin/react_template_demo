@@ -1,7 +1,6 @@
-var path = require('path');
 var React = require('react/addons');
 require('node-jsx').install();
-require('../plugins/node-react-templates').install();
+require('node-react-templates').install();
 
 //var compPath="../src/templates/hello.rt";
 var compPath="../src/components/hello.jsx";
