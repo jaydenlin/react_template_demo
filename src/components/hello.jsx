@@ -1,6 +1,6 @@
 var React = require('react/addons');
 
-var itemTemplate = require("../templates/item.rt");
+var helloTemplate = require("../templates/hello.rt");
 // var ItemNode = React.createClass({
 
 //   render: function() {
@@ -28,14 +28,8 @@ var Hello = React.createClass({
     };
   },
   render: function() {
-    
-    // var itemNodes=this.state.items.map(function(item){
-    //   console.log(item);
-    //   return <ItemNode item={item}/>;
-    
-    // });
-
-    return itemTemplate.apply(this);
+   
+    return helloTemplate.apply(this);
     
   }
 
