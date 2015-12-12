@@ -1,4 +1,7 @@
-<div>
-  <h3>Hello World</h3>
-  <p>{this.state.name}</p>
-</div>
+<ul>
+	<li class="test" rt-repeat="item in this.state.items">
+	  <h3>Hello World</h3>
+	   
+	  <a>{item.productName}</a>
+	</li>
+</ul>

@@ -1,16 +1,41 @@
 var React = require('react/addons');
 
-var hellpTemplate = require("../templates/hello.rt");
+var itemTemplate = require("../templates/item.rt");
+// var ItemNode = React.createClass({
+
+//   render: function() {
+//     return itemTemplate.apply(this);;
+//   }
+
+// });
 
 var Hello = React.createClass({
+  
   getInitialState: function() {
     return {
-      name:"Jayden" 
+      name:"Jayden",
+      items:[
+        {
+          productName:"AAA",
+          price:"130"
+        },
+        {
+          productName:"BBB",
+          price:"160"
+
+        }
+      ] 
     };
   },
   render: function() {
     
-    return hellpTemplate.apply(this);
+    // var itemNodes=this.state.items.map(function(item){
+    //   console.log(item);
+    //   return <ItemNode item={item}/>;
+    
+    // });
+
+    return itemTemplate.apply(this);
     
   }
 
