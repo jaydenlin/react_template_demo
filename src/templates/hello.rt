@@ -1,3 +1,4 @@
 <div>
   <h3>Hello World</h3>
+  <p>{this.state.name}</p>
 </div>
