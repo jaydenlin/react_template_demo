@@ -50,6 +50,9 @@ module.exports = {
         //'react': 'React'
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx'],
+        alias: {
+         "kk": "react-templates"
+        }
     }
 };

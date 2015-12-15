@@ -1,4 +1,3 @@
 <div>
   <h3>Hello World</h3>
-  <a href="{this.state.name}">{this.state.link}</a>
 </div>
