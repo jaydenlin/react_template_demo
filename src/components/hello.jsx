@@ -1,12 +1,6 @@
 var React = require('react/addons');
-//var isNode=(typeof module !== 'undefined' && module.exports);
-// if(isNode){
-//   var rt=require("react-templates");
-// }else{
-//  var hellpTemplate = require("../templates/hello.rt");
-//}
 
-// var hellpTemplate = rt.convertTemplateToReact("<h3>Hello World</h3>");
+var hellpTemplate = require("../templates/hello.rt");
 
 var Hello = React.createClass({
   getInitialState: function() {
@@ -17,8 +11,8 @@ var Hello = React.createClass({
   },
   render: function() {
     //console.log(hellpTemplate);
-    //return hellpTemplate();
-    return <div>Hello World</div>
+    return hellpTemplate();
+    //return <div>Hello World</div>
   }
 
 });
